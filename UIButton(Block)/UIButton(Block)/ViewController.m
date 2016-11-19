@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "UIButton+Category.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIButton *button = [UIButton buttonWithtitle:@"ddddd" frame:CGRectMake(0, 100, 60, 30) backColor:[UIColor redColor] backGroundImage:[UIImage imageNamed:@""] action:^(UIButton *button) {
+     
+        self.view.backgroundColor = [UIColor purpleColor];
+        
+        
+    }];
+    [self.view addSubview:button];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

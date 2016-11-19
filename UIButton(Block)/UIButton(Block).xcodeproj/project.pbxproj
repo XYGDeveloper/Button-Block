@@ -15,6 +15,7 @@
 		B06BE45C1DE04682005F49C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B06BE45A1DE04682005F49C1 /* LaunchScreen.storyboard */; };
 		B06BE4671DE04682005F49C1 /* UIButton_Block_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B06BE4661DE04682005F49C1 /* UIButton_Block_Tests.m */; };
 		B06BE4721DE04682005F49C1 /* UIButton_Block_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B06BE4711DE04682005F49C1 /* UIButton_Block_UITests.m */; };
+		B06BE4821DE0470C005F49C1 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B06BE4811DE0470C005F49C1 /* UIButton+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B06BE46D1DE04682005F49C1 /* UIButton(Block)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIButton(Block)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06BE4711DE04682005F49C1 /* UIButton_Block_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIButton_Block_UITests.m; sourceTree = "<group>"; };
 		B06BE4731DE04682005F49C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B06BE4801DE0470C005F49C1 /* UIButton+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Category.h"; sourceTree = "<group>"; };
+		B06BE4811DE0470C005F49C1 /* UIButton+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		B06BE44B1DE04682005F49C1 /* UIButton(Block) */ = {
 			isa = PBXGroup;
 			children = (
+				B06BE47F1DE046E1005F49C1 /* Category */,
 				B06BE44F1DE04682005F49C1 /* AppDelegate.h */,
 				B06BE4501DE04682005F49C1 /* AppDelegate.m */,
 				B06BE4521DE04682005F49C1 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				B06BE4731DE04682005F49C1 /* Info.plist */,
 			);
 			path = "UIButton(Block)UITests";
+			sourceTree = "<group>";
+		};
+		B06BE47F1DE046E1005F49C1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B06BE4801DE0470C005F49C1 /* UIButton+Category.h */,
+				B06BE4811DE0470C005F49C1 /* UIButton+Category.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B06BE4541DE04682005F49C1 /* ViewController.m in Sources */,
+				B06BE4821DE0470C005F49C1 /* UIButton+Category.m in Sources */,
 				B06BE4511DE04682005F49C1 /* AppDelegate.m in Sources */,
 				B06BE44E1DE04682005F49C1 /* main.m in Sources */,
 			);
